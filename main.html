@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>환경 보호 캠페인</title>
+  <link rel="stylesheet" href="./CSS/main.css">
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <h1>환경 보호 캠페인</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">캠페인 소개</a></li>
+        <li><a href="#activities">활동 내용</a></li>
+        <li><a href="#join">참여 방법</a></li>
+        <li><a href="#board">사용자 의견 게시판</a></li>
+        <li><a href="#gallery">사진 갤러리</a></li>
+        <li><a href="#download">캠페인 자료 다운로드</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 기타 섹션들 -->
+  <!-- ... -->
+
+  <!-- 사진 갤러리 섹션 -->
+  <section id="gallery">
+    <h2>갤러리</h2>
+    <p>캠페인 활동 사진을 확인하거나 새로운 사진을 업로드해보세요.</p>
+    
+    <!-- 이미지 업로드 입력 -->
+    <input type="file" id="uploadImage" accept="image/*" onchange="displayImage()">
+    
+    <!-- 갤러리 이미지 미리보기 -->
+    <div id="imagePreview"></div>
+
+    <!-- 샘플 사진 목록 -->
+    <div class="gallery-grid">
+      <img src="./image/bear_one.jpg" alt="북금곰">
+      <img src="sample2.jpg" alt="환경 보호 활동 사진 2">
+      <img src="sample3.jpg" alt="환경 보호 활동 사진 3">
+    </div>
+  </section>
+  <!-- 사용자 의견 게시판 -->
+  <section id="board">
+    <h2>사용자 의견 게시판</h2>
+    <div class="input-area">
+      <input type="text" id="userComment" placeholder="의견을 남겨주세요">
+      <button onclick="addComment()">의견 제출</button>
+    </div>
+    <ul id="commentsList"></ul>
+  </section>
+
+  <!-- 연락처 섹션 -->
+  <section id="contact">
+    <h2>연락처</h2>
+    <p>이메일: zxcv631234@daum.net</p>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
